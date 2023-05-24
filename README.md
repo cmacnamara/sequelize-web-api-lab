@@ -1,1 +1,1 @@
-# sequelize-web-api-lab
+# Sequelize Web API Lab
