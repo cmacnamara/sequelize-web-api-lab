@@ -18,6 +18,7 @@ Request Body:
   "brand": "string",
   "model": "string",
   "year": integer,
+  "color": "string"
 }
 ```
 
@@ -28,6 +29,7 @@ Response:
   "brand": "string",
   "model": "string",
   "year": integer,
+  "color": "string",
   "createdAt": "timestamp",
   "updatedAt": "timestamp",
 }
@@ -48,6 +50,7 @@ Response:
   "brand": "string",
   "model": "string",
   "year": integer,
+  "color": "string",
   "createdAt": "timestamp",
   "updatedAt": "timestamp",
 }
@@ -67,6 +70,7 @@ Request Body:
   "brand": "string",
   "model": "string",
   "year": integer,
+  "color": "string"
 }
 ```
 
@@ -77,6 +81,7 @@ Response:
   "brand": "string",
   "model": "string",
   "year": integer,
+  "color": "string",
   "createdAt": "timestamp",
   "updatedAt": "timestamp",
 }
@@ -97,6 +102,7 @@ Response:
   "brand": "string",
   "model": "string",
   "year": integer,
+  "color": "string",
   "createdAt": "timestamp",
   "updatedAt": "timestamp",
 }

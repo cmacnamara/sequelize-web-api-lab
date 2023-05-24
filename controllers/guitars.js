@@ -20,10 +20,9 @@ const index = async (req, res) => {
 
 const update = async (req, res) => {
   try {
-    const guitar = await Guitar.update(
-      req.body,
-      { where: { id: req.params.guitarId }, returning: true }
-    )
+    const guitar = await Guitar.findByPk(req.params.guitarId)
+    guitar.set(req.body)
+    await guitar.save()
     res.status(200).json(guitar)
   } catch (error) {
     res.status(500).json(error)
@@ -32,10 +31,9 @@ const update = async (req, res) => {
 
 const deleteGuitar = async (req, res) => {
   try {
-    const numberOfRowsRemoved = await Guitar.destroy(
-      { where: { id: req.params.guitarId } }
-    )
-    res.status(200).json(numberOfRowsRemoved)
+    const guitar = await Guitar.findByPk(req.params.guitarId)
+    await guitar.destroy()
+    res.status(200).json(guitar)
   } catch (error) {
     res.status(500).json(error)
   }
