@@ -5,8 +5,8 @@ router.post('/', guitarsCtrl.create)
 
 router.get('/', guitarsCtrl.index)
 
-router.put('/', guitarsCtrl.update)
+router.put('/:guitarId', guitarsCtrl.update)
 
-router.delete('/', guitarsCtrl.delete)
+router.delete('/:guitarId', guitarsCtrl.delete)
 
 module.exports = router
